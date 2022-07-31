@@ -1,7 +1,8 @@
 
-.App {
+
+html {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(40, 35, 35);
 }
 
@@ -24,3 +25,49 @@
     background-size: contain;
 }
 
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.card-item {
+    width: 450px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    justify-items: stretch;
+    color: aliceblue;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    background-color: rgba(110, 31, 31, 0.612);
+}
+
+img {
+    width: 50%;
+}
+
+
+@media only screen and (min-width: 1025px)  {
+    body {
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (max-width: 770px)  {
+    .card {
+        text-align: center;
+    }
+
+    .card-item {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+    }
+    
+}
