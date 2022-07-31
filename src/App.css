@@ -1,38 +1,26 @@
+
 .App {
-  text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(40, 35, 35);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-app {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(148 38 38 / 33%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    height: auto;
+    width: 100px;
+    background-image: url('./assets/Marvel_Logo.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
