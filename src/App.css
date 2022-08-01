@@ -25,12 +25,12 @@ html {
     background-size: contain;
 }
 
-.card {
+.cards {
     width: 100vw;
     height: 100vh;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
 .card-item {
@@ -39,15 +39,23 @@ html {
     margin: 10px;
     display: flex;
     justify-items: stretch;
+    text-align: center;
     color: aliceblue;
+    border-radius: 10px;
     font-family: 'Bangers', cursive;
     letter-spacing: 3px;
     background-color: rgba(110, 31, 31, 0.612);
 }
 
+h2 {
+    margin-top: 35px;
+}
+
 img {
     width: 50%;
+    border-radius: 10px;
 }
+
 
 
 @media only screen and (min-width: 1025px)  {
@@ -57,17 +65,30 @@ img {
 }
 
 @media only screen and (max-width: 770px)  {
-    .card {
-        text-align: center;
-    }
-
     .card-item {
-        width: 300px;
-        flex-direction: column;
+        display: none;
     }
 
-    img {
-        width: 50%;
+    .cards {
+        text-align: center;
+        width: 100%;
+    }
+
+    .name-hero{
+        color: aliceblue;
+    }
+    
+
+}
+
+@media only screen and (min-width: 770px)  {
+    
+    .none {
+        display: none; 
+    }
+    
+    .name-hero {
+        display: none; 
     }
     
 }
