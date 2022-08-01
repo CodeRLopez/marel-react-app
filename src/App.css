@@ -3,14 +3,16 @@
 html {
     height: 100vh;
     width: 100%;
-    background-color: rgb(40, 35, 35);
+    background-image: url(./assets/4826101.jpg);
+    background-size: cover;
+    /* background-color: rgb(40, 35, 35); */
 }
 
 .header-app {
     height: 50px;
     width: 100%;
-    margin-bottom: 50px;
     display: flex;
+    margin-bottom: 5px;
     justify-content: center;
     align-content: center;
     background-color: rgb(148 38 38 / 33%);
@@ -47,6 +49,46 @@ html {
     background-color: rgba(110, 31, 31, 0.612);
 }
 
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* .btn {
+    width: 60px;
+    height: 31px;
+    border: none;
+    font-size: medium;
+    font-family: 'Bangers', cursive;
+    border-left: 3px solid rgba(0, 0, 0, 0.833);
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(240, 248, 255, 0.721);
+} */
+
+.btn {
+    width: 60px;
+    height: 33px;
+    font-size: medium;
+    font-family: 'Bangers', cursive;
+}
+
+
+input {
+    width: 25%; 
+    height: 30px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: medium;
+    font-family: 'Bangers', cursive;
+    background-color: rgba(240, 248, 255, 0.721);
+}
+
+input::placeholder {
+    color: black;
+    font-size: medium;
+    font-family: 'Bangers', cursive;
+}
+
 h2 {
     margin-top: 35px;
 }
@@ -56,13 +98,6 @@ img {
     border-radius: 10px;
 }
 
-
-
-@media only screen and (min-width: 1025px)  {
-    body {
-        overflow-y: hidden;
-    }
-}
 
 @media only screen and (max-width: 770px)  {
     .card-item {
@@ -78,6 +113,9 @@ img {
         color: aliceblue;
     }
     
+    input {
+        width: 70%;
+    }
 
 }
 
