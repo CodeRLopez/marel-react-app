@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
 
   const [personajes, setPersonajes] = useState([]);
-  const [hero, setHero] = useState('')
+  const [hero, setHero] = useState('');
 
   const fetchHeroes = async (e) => {
     e.preventDefault();
